@@ -52,3 +52,11 @@ app.use((req, res) => {
 app.listen(port, () => {
   console.log(`Our server is listening on port ${port}`);
 });
+
+
+
+
+
+// git remote add origin https://github.com/imon130307/B6A2_submission.git
+// git branch -M main
+// git push -u origin main

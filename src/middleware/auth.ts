@@ -17,10 +17,10 @@ const auth = (...roles: string[]) => {
       console.log({ decoded });
       req.user = decoded;
 
-      //!----["admin"]-----
+      //!----admin checking-----
       if (roles.length && !roles.includes(decoded.role as string)) {
         return res.status(500).json({
-          error: "unauthorized!!!",
+          error: "unauthorized because you are not ADMIN!!!",
         });
       }
 
